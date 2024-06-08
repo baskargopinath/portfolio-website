@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 60px 0; /* Add padding to top and bottom */
+      }
+      .section__text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .section__text h1 {
+        margin-bottom: 20px; /* Add padding below the heading */
+      }
+      .btn-container {
+        display: flex;
+        flex-direction: column;
+        gap: 10px; /* Add space between buttons */
+        align-items: center;
+      }
+      .education-details-container,
+      .experience-details-container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px; /* Add space between the boxes */
+        align-items: center;
+      }
+      .details-container {
+        padding: 20px 40px; /* Increase horizontal padding */
+        width: 1000px; /* Set a fixed width for the boxes */
+        box-sizing: border-box;
+        text-align: left; /* Align text to the left */
+      }
+      .title {
+        margin-bottom: 20px; /* Standardize padding below the title */
+      }
+      .details-container p, .details-container h2 {
+        line-height: 1.5; /* Increase line height for better vertical spacing */
+      }
+      hr {
+        width: 80%;
+        border: none;
+        border-top: 1px solid #ccc;
+        margin: 40px auto; /* Center the line */
+      }
+      .details-container ul {
+        padding-left: 20px; /* Add padding to the left of the list */
+      }
+      .details-container li {
+        margin-bottom: 10px; /* Add space between list items */
+      }
+      .experience-sub-title {
+        color: black; /* Change the color to black */
+        margin-bottom: 10px; /* Reduce space between title and content */
+      }
+      .skills-details-container .details-container,
+      .certifications-details-container .details-container {
+        width: 600px; /* Reduce the width of the boxes in the skills section */
+        margin-bottom: 20px; /* Add vertical padding between the boxes */
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="apple-style-nav">
+      <div class="logo">Baskar Gopinath</div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Technical Skills</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+      </ul>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">John Doe</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#education" onclick="toggleMenu()">Education</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">Technical Skills</a></li>
+          <li><a href="#certifications" onclick="toggleMenu()">Certifications</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="about">
+      <div class="section__text">
+        <h1 class="title">About Me</h1>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-example.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='mailto:examplemail@gmail.com'">
+            Email
+          </button>
+          <button class="btn btn-color-2" onclick="location.href='https://linkedin.com/'">
+            LinkedIn
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='https://github.com/'">
+            GitHub
+          </button>
+        </div>
+      </div>
+    </section>
+    <hr>
+    <section id="education">
+      <h1 class="title">Education</h1>
+      <div class="education-details-container">
+        <div class="details-container">
+          <h2 class="education-sub-title">National University of Singapore</h2>
+          <p>Bachelor of Computing (Honours)</p>
+          <p>Subject: Computer Science</p>
+          <p>2022 - 2026</p>
+        </div>
+        <div class="details-container">
+          <h2 class="education-sub-title">Temasek Junior College</h2>
+          <p>GCSE A-Levels</p>
+          <p>Field of Study: Science (BCM/E)</p>
+          <p>2018 - 2020</p>
+        </div>
+        <div class="details-container">
+          <h2 class="education-sub-title">Anglo-Chinese School (Independent)</h2>
+          <p>GCSE O-Levels</p>
+          <p>Field of Study: Triple Science</p>
+          <p>2014 - 2018</p>
+        </div>
+      </div>
+    </section>
+    <hr>
+    <section id="experience">
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="details-container">
+          <h2 class="experience-sub-title">NLP Engineer Intern @ TookiTaki</h2>
+          <ul>
+            <li>Developed and refined ML/DL models for real-time and batch screening, focusing on implementation, data preprocessing, model training, and evaluation.</li>
+            <li>Generated synthetic data using GPT-4 for training and testing purposes.</li>
+            <li>Benchmarked and evaluated the performance of various models and approaches to identify the most effective solutions.</li>
+            <li>Documented research findings and contributed to the preparation of comprehensive reports and presentations for stakeholders.</li>
+          </ul>
+          <p>May 2024 - Aug 2024</p>
+        </div>
+        <div class="details-container">
+          <h2 class="experience-sub-title">Software Engineer Intern @ CyberSierra</h2>
+          <ul>
+            <li>Created a file scanner in Python utilising existing anti-malware toolkits for a script that allows a user to upload files and check if they contain viruses.</li>
+            <li>Assessed beta-versions of CyberSierra’s intelligence platform, delivering actionable feedback to enhance feature robustness and usability.</li>
+            <li>Led comprehensive product teardowns of insurtech offerings, identifying strengths and how they could be leveraged for CyberSierra.</li>
+          </ul>
+          <p>Jan 2022 - Aug 2022</p>
+        </div>
+      </div>
+    </section>
+    <hr>
+    <section id="projects">
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="details-container">
+          <h2 class="experience-sub-title">Chatbot | Java</h2>
+          <ul>
+            <li>Developed a Java-based personal assistant for managing tasks.</li>
+            <li>It was inspired by the Java mascot Duke and incrementally introduces software engineering practices.</li>
+            <li>Features include task addition, listing, marking tasks as done, error handling, data persistence, and understanding dates.</li>
+            <li>Enhanced user interaction through CLI with provisions for future GUI integration using JavaFX.</li>
+            <li>Demonstrated proficiency in Java, OOP, and JavaFX, alongside software development best practices.</li>
+          </ul>
+        </div>
+        <div class="details-container">
+          <h2 class="experience-sub-title">Client Management Application for Personal Trainers | Java</h2>
+          <ul>
+            <li>Enhanced AddressBook-Level3 (AB3) to create a desktop client management application tailored for personal trainers, focusing on efficient client tracking.</li>
+            <li>Led rigorous testing and error handling efforts to ensure application reliability, while also producing comprehensive user and developer documentation including UML diagrams.</li>
+            <li>Streamlined the client management process for personal trainers, significantly improving data organization, accessibility, and user engagement within the application.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <hr>
+    <section id="skills">
+      <h1 class="title">Technical Skills</h1>
+      <div class="skills-details-container">
+        <div class="details-container">
+          <h2 class="skills-sub-title">Languages</h2>
+          <p>Java, Python, C, C++, SQL, HTML, CSS, JavaScript</p>
+        </div>
+        <div class="details-container">
+          <h2 class="skills-sub-title">Technologies/Frameworks</h2>
+          <p>Git</p>
+        </div>
+      </div>
+    </section>
+    <hr>
+    <section id="certifications">
+      <h1 class="title">Certifications</h1>
+      <div class="certifications-details-container">
+        <div class="details-container">
+          <h2 class="certification-sub-title">DEV210x | Introduction to C++</h2>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Technical Skills</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 John Doe. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
