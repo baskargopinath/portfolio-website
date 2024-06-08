@@ -66,8 +66,18 @@
       }
       .skills-details-container .details-container,
       .certifications-details-container .details-container {
-        width: 600px; /* Reduce the width of the boxes in the skills section */
+        width: 600px; /* Reduce the width of the boxes in the skills and certifications sections */
         margin-bottom: 20px; /* Add vertical padding between the boxes */
+      }
+      .skills-sub-title, .certification-sub-title {
+        font-size: 1.2em;
+        font-weight: bold;
+        margin-bottom: 10px; /* Add space below the title */
+      }
+      .certification-description {
+        font-weight: normal;
+        font-size: 1em;
+        margin-top: -10px; /* Add space above the description */
       }
     </style>
   </head>
@@ -189,8 +199,8 @@
         <div class="details-container">
           <h2 class="experience-sub-title">Client Management Application for Personal Trainers | Java</h2>
           <ul>
-            <li>Enhanced AddressBook-Level3 (AB3) to create a desktop client management application tailored for personal trainers, focusing on efficient client tracking.</li>
-            <li>Led rigorous testing and error handling efforts to ensure application reliability, while also producing comprehensive user and developer documentation including UML diagrams.</li>
+            <li>Created a client management application tailored for personal trainers, focusing on efficient client tracking.</li>
+            <li>Conducted rigorous testing and error handling to ensure application reliability, while also producing comprehensive user and developer documentation including UML diagrams.</li>
             <li>Streamlined the client management process for personal trainers, significantly improving data organization, accessibility, and user engagement within the application.</li>
           </ul>
         </div>
@@ -202,11 +212,11 @@
       <div class="skills-details-container">
         <div class="details-container">
           <h2 class="skills-sub-title">Languages</h2>
-          <p>Java, Python, C, C++, SQL, HTML, CSS, JavaScript</p>
+          <p>Java, Python, C, C++, SQL, HTML, CSS, JavaScript, XML</p>
         </div>
         <div class="details-container">
           <h2 class="skills-sub-title">Technologies/Frameworks</h2>
-          <p>Git</p>
+          <p>Git, JavaFX</p>
         </div>
       </div>
     </section>
@@ -215,7 +225,8 @@
       <h1 class="title">Certifications</h1>
       <div class="certifications-details-container">
         <div class="details-container">
-          <h2 class="certification-sub-title">DEV210x | Introduction to C++</h2>
+          <h2 class="certification-sub-title">DEV210x</h2>
+          <p class="certification-description">Introduction to C++</p>
         </div>
       </div>
     </section>
