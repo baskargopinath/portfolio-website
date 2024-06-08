@@ -7,6 +7,7 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <style>
+      /* Common styles */
       section {
         display: flex;
         flex-direction: column;
@@ -95,6 +96,35 @@
       footer p {
         font-size: 0.8em; /* Smaller text size */
         margin-top: -20px; /* Adjust spacing above the copyright text */
+      }
+
+      /* Mobile styles */
+      @media (max-width: 768px) {
+        section {
+          padding: 30px 0;
+        }
+        .btn {
+          width: 100%;
+          height: auto;
+          padding: 10px 20px;
+          font-size: 1em;
+        }
+        .details-container {
+          width: 90%;
+          padding: 10px;
+        }
+        .skills-details-container .details-container,
+        .certifications-details-container .details-container {
+          width: 100%;
+          padding: 10px;
+        }
+        .section__text h1 {
+          font-size: 2em;
+        }
+        .btn-container {
+          width: 100%;
+          padding: 0 20px;
+        }
       }
     </style>
   </head>
@@ -239,7 +269,7 @@
       <h1 class="title">Certifications</h1>
       <div class="certifications-details-container">
         <div class="details-container">
-          <h2 class="certification-sub-title">DEV210x</h2>
+          <h2 class="certification-sub-title">DEV210x</h>
           <p class="certification-description">Introduction to C++</p>
         </div>
       </div>
